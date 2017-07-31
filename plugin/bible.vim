@@ -4,9 +4,16 @@ endif
 let g:loaded_vimbible = 1
 
 function! FindInBible()
-	echo system("diatheke -b system -k modulelistnames")
-	let module = input("Choose Module: ")
-	let key = input("Enter search key: ")
+	" Print out list of modules
+	let modulelist = split(system("diatheke -b system -k modulelistnames"), "\n")
+	let index = 0
+	while index < len(modulelist)
+		echo "\n".index."\t".modulelist[index]
+		let index = index + 1
+	endwhile
+
+	let module = modulelist[str2nr(input("Choose Module: "))]
+	let key = input("Enter search key or text: ")
 	let result = system("diatheke -b ".module." -k ".key)
 	normal ggVGd
 	execute "normal i".result
