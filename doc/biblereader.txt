@@ -1,0 +1,30 @@
+*biblereader.txt*  Bible Reader for Vim
+
+Author: sirjofri <https://github.com/sirjofri/>
+License: beerware <http://en.wikipedia.org/wiki/Beerware>
+
+INTRODUCTION                                    *biblereader*
+
+In any setup you can open a new vim buffer with results from |diatheke|. This
+plugin is a wrapper for |diatheke|. The results will be opened in a new
+buffer.
+
+USAGE AND COMMANDS                              *biblereader-usage*
+
+Use |:call| and one of these commands:
+
+                                                *biblereader-FindInBible*
+[V]FindInBible()        This will open a small dialog and ask you for a sword
+                        module and a search request. This search request will
+                        be directly added to the |diatheke| command. The
+                        resulting text will be pasted in a new horizontal
+                        buffer. When using the |V|-Version of the function the
+                        new buffer will be split vertically.
+
+ABOUT                                           *biblereader-about*
+
+This software will be hosted on GitHub:
+
+https://github.com/sirjofri/vim-biblereader
+
+vim:tw=78:et:ts=8:sw=2:ft=help:norl:
