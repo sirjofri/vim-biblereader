@@ -8,8 +8,8 @@ Usage
 
 You have two commands. Both will prompt you for your choice.
 
-`:call FindInBible()` will open a horizontal window
-`:call VFindInBible()` will open a vertical window
+- `:call FindInBible()` will open a horizontal window
+- `:call VFindInBible()` will open a vertical window
 
 Installation
 ------------
