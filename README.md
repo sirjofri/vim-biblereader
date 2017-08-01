@@ -10,6 +10,9 @@ You have two commands. Both will prompt you for your choice.
 
 - `:call FindInBible()` will open a horizontal window
 - `:call VFindInBible()` will open a vertical window
+- `:call PasteVerse()` will paste a bible verse
+
+For more information on these commands see the documentation.
 
 Installation
 ------------

@@ -21,6 +21,11 @@ Use |:call| and one of these commands:
                         buffer. When using the |V|-Version of the function the
                         new buffer will be split vertically.
 
+                                                *biblereader-PasteVerse*
+PasteVerse()            This will open the same dialog. The resulting text
+                        will be pasted at your current cursor position. You
+                        can review the result before it is pasted.
+
 ABOUT                                           *biblereader-about*
 
 This software will be hosted on GitHub:
